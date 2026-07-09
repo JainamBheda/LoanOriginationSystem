@@ -1,0 +1,4 @@
+.app-container { height: 100vh; }
+.app-sidebar { width: 260px; border: none; }
+.main-content { padding: 0; min-height: calc(100vh - 64px); }
+mat-drawer-content { display: flex; flex-direction: column; }

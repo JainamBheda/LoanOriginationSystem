@@ -1,0 +1,15 @@
+@if (isLoggedIn) {
+  <mat-drawer-container class="app-container">
+    <mat-drawer mode="side" opened class="app-sidebar">
+      <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+      <app-header></app-header>
+      <main class="main-content">
+        <router-outlet />
+      </main>
+    </mat-drawer-content>
+  </mat-drawer-container>
+} @else {
+  <router-outlet />
+}
